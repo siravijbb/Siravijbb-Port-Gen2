@@ -47,7 +47,7 @@
 	<script src="https://nbgears.statuspage.io/embed/script.js"></script>
 </Navbar>
 
-{#if y < 10}
+{#if y < 100}
 	<style>
 		.navcolor {
 			background-color: #554994;
