@@ -24,8 +24,8 @@ const config = {
       'silver': '#ecebff',
       'bubble-gum': '#ff77e9',
       'bermuda': '#78dcca',
-      'siravijpurple': '#554994',
-      'siravijwhite': '#F29393',
+      'siravijpp': '#554994',
+      'siravijw': '#F29393',
     },
   },
 };
