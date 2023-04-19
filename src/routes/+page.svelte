@@ -10,7 +10,7 @@
 		<img
 			src="Siravij-RedDepot.jpg"
 			alt="It's Me,Siravij!"
-			class=" h-full w-screen mx-auto -mt-52 lg:-mt-96 sm:-mt-80 -mt-auto"
+			class=" h-full w-screen mx-auto lg:-mt-96 sm:-mt-72 -mt-auto"
 		/>
 	</main>
 	<Footer />
