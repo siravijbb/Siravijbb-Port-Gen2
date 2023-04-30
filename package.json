@@ -37,6 +37,11 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"pnpm": "^7.30.0"
+		"@popperjs/core": "^2.11.7",
+		"classnames": "^2.3.2",
+		"flowbite": "^1.6.5",
+		"pnpm": "^7.30.0",
+		"siema": "^1.5.1",
+		"svelte-carousel": "^1.0.25"
 	}
 }

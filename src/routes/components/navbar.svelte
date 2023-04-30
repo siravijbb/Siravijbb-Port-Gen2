@@ -28,6 +28,8 @@
 		<NavLi href="https://blog.siravijbb.me/" class="cursor-pointer text-white navcolor rounded-2xl "
 			>Article</NavLi
 		>
+		<NavLi href="/availability" class="cursor-pointer text-white navcolor rounded-2xl "
+			>Availability</NavLi>
 		<NavLi class="cursor-pointer text-white navcolor rounded-2xl "
 			><Chevron aligned>Project</Chevron></NavLi
 		>

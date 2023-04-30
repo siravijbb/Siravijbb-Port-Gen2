@@ -2,20 +2,25 @@ lockfileVersion: 5.4
 
 specifiers:
   '@playwright/test': ^1.28.1
+  '@popperjs/core': ^2.11.7
   '@sveltejs/adapter-auto': ^2.0.0
   '@sveltejs/kit': ^1.5.0
   '@typescript-eslint/eslint-plugin': ^5.45.0
   '@typescript-eslint/parser': ^5.45.0
   autoprefixer: ^10.4.14
+  classnames: ^2.3.2
   eslint: ^8.28.0
   eslint-config-prettier: ^8.5.0
   eslint-plugin-svelte3: ^4.0.0
+  flowbite: ^1.6.5
   flowbite-svelte: ^0.34.2
   pnpm: ^7.30.0
   postcss: ^8.4.21
   prettier: ^2.8.0
   prettier-plugin-svelte: ^2.8.1
+  siema: ^1.5.1
   svelte: ^3.54.0
+  svelte-carousel: ^1.0.25
   svelte-check: ^3.0.1
   tailwindcss: ^3.2.7
   tslib: ^2.4.1
@@ -24,7 +29,12 @@ specifiers:
   vitest: ^0.25.3
 
 dependencies:
+  '@popperjs/core': 2.11.7
+  classnames: 2.3.2
+  flowbite: 1.6.5
   pnpm: 7.30.0
+  siema: 1.5.1
+  svelte-carousel: 1.0.25
 
 devDependencies:
   '@playwright/test': 1.32.0
@@ -36,7 +46,7 @@ devDependencies:
   eslint: 8.36.0
   eslint-config-prettier: 8.8.0_eslint@8.36.0
   eslint-plugin-svelte3: 4.0.0_wzem237sbvnwe7n34ytc5phasy
-  flowbite-svelte: 0.34.2_svelte@3.57.0
+  flowbite-svelte: 0.34.2_c2ibckqymy6y7vj6rfvcj75fdi
   postcss: 8.4.21
   prettier: 2.8.6
   prettier-plugin-svelte: 2.10.0_bzjcbf5vweu43cmyrxgltnmf74
@@ -357,9 +367,8 @@ packages:
     resolution: {integrity: sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==}
     dev: true
 
-  /@popperjs/core/2.11.6:
-    resolution: {integrity: sha512-50/17A98tWUfQ176raKiOGXuYpLyyVMkxxG6oylzL3BPOlA6ADGdK7EYunSa4I064xerltq9TGXs8HmOk5E+vw==}
-    dev: true
+  /@popperjs/core/2.11.7:
+    resolution: {integrity: sha512-Cr4OjIkipTtcXKjAsm8agyleBuDHvxzeBoa1v543lbv1YaIwQjESsVcmjiWiPEbC1FIeHOG/Op9kdCmAmiS3Kw==}
 
   /@sveltejs/adapter-auto/2.0.0_@sveltejs+kit@1.13.0:
     resolution: {integrity: sha512-b+gkHFZgD771kgV3aO4avHFd7y1zhmMYy9i6xOK7m/rwmwaRO8gnF5zBc0Rgca80B2PMU1bKNxyBTHA14OzUAQ==}
@@ -778,7 +787,6 @@ packages:
 
   /classnames/2.3.2:
     resolution: {integrity: sha512-CSbhY4cFEJRe6/GQzIk5qXZ4Jeg5pcsP7b5peFSDpffpe1cqjASH/n9UTjBwOp6XpMSTwQ8Za2K5V02ueA7Tmw==}
-    dev: true
 
   /color-convert/2.0.1:
     resolution: {integrity: sha512-RRECPsj7iu/xb5oKYcsFHSppFNnsj/52OVTRKb4zP5onXwVF3zVmmToNcOfGC+CRDpfK/U584fMg38ZHCaElKQ==}
@@ -887,6 +895,14 @@ packages:
     dependencies:
       esutils: 2.0.3
     dev: true
+
+  /easy-reactive/1.0.4:
+    resolution: {integrity: sha512-dFVouegPctMf6XT5si+sRByBWUQE30n99TW0Y45Y7mccmNsbSl4uXA2sBGI8zCDZqXjhb8ouA3wVVhSSGpXk5Q==}
+    dependencies:
+      lodash.clonedeep: 4.5.0
+      lodash.get: 4.4.2
+      lodash.isequal: 4.5.0
+    dev: false
 
   /electron-to-chromium/1.4.339:
     resolution: {integrity: sha512-MSXHBJGcbBydq/DQDlpBeUKnJ6C7aTiNCTRpfDV5Iz0sNr/Ng6RJFloq82AAicp/SrmDq4zF6XsKG0B8Xwn1UQ==}
@@ -1130,24 +1146,26 @@ packages:
     resolution: {integrity: sha512-5nqDSxl8nn5BSNxyR3n4I6eDmbolI6WT+QqR547RwxQapgjQBmtktdP+HTBb/a/zLsbzERTONyUB5pefh5TtjQ==}
     dev: true
 
-  /flowbite-svelte/0.34.2_svelte@3.57.0:
+  /flowbite-svelte/0.34.2_c2ibckqymy6y7vj6rfvcj75fdi:
     resolution: {integrity: sha512-Botfv97qQq0bPiK0vLVx0KIttFHj5iQ38a+krwBlqkTTzRO3zeUuRAZPg6A/FVLF5swXU8zb5c37Kls21vGJHA==}
     engines: {node: '>=16.0.0', npm: '>=7.0.0'}
     peerDependencies:
+      '@popperjs/core': ^2.11.6
+      classnames: ^2.3.2
+      flowbite: ^1.6.3
       svelte: ^3.55.1
     dependencies:
-      '@popperjs/core': 2.11.6
+      '@popperjs/core': 2.11.7
       classnames: 2.3.2
-      flowbite: 1.6.4
+      flowbite: 1.6.5
       svelte: 3.57.0
     dev: true
 
-  /flowbite/1.6.4:
-    resolution: {integrity: sha512-//kSaigwERCcE3udumadB3+xfOXeN/ZQzcub2qVCHuB7uscB4XIm3yP9R8zL0XsEOnYG2lnroq/dydQZbzvESw==}
+  /flowbite/1.6.5:
+    resolution: {integrity: sha512-eI4h3pIRI9d7grlYq14r0A01KUtw7189sPLLx/O2i7JyPEWpbleScfYuEc48XTeNjk1xxm/JHgZkD9kjyOWAlA==}
     dependencies:
-      '@popperjs/core': 2.11.6
+      '@popperjs/core': 2.11.7
       mini-svg-data-uri: 1.4.4
-    dev: true
 
   /fraction.js/4.2.0:
     resolution: {integrity: sha512-MhLuK+2gUcnZe8ZHlaaINnQLl0xRIGRfcGk2yl8xoQAfHrSsL3rYu6FCmBdkdbhc9EPlwyGHewaRsvwRMJtAlA==}
@@ -1366,6 +1384,18 @@ packages:
       p-locate: 5.0.0
     dev: true
 
+  /lodash.clonedeep/4.5.0:
+    resolution: {integrity: sha512-H5ZhCF25riFd9uB5UCkVKo61m3S/xZk1x4wA6yp/L3RFP6Z/eHH1ymQcGLo7J3GMPfm0V/7m1tryHuGVxpqEBQ==}
+    dev: false
+
+  /lodash.get/4.4.2:
+    resolution: {integrity: sha512-z+Uw/vLuy6gQe8cfaFWD7p0wVv8fJl3mbzXh33RS+0oW2wvUqiRXiQ69gLWSLpgB5/6sU+r6BlQR0MBILadqTQ==}
+    dev: false
+
+  /lodash.isequal/4.5.0:
+    resolution: {integrity: sha512-pDo3lu8Jhfjqls6GkMgpahsF9kCyayhgykjyLMNFTKWrpVdAQtYyB4muAMWozBB4ig/dtWAmsMxLEI8wuz+DYQ==}
+    dev: false
+
   /lodash.merge/4.6.2:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
     dev: true
@@ -1431,7 +1461,6 @@ packages:
   /mini-svg-data-uri/1.4.4:
     resolution: {integrity: sha512-r9deDe9p5FJUPZAk3A59wGH7Ii9YrjjWw0jmw/liSbHl2CHiyXj6FcDXDu2K3TjVAXqiJdaw3xxwlZZr9E6nHg==}
     hasBin: true
-    dev: true
 
   /minimatch/3.1.2:
     resolution: {integrity: sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==}
@@ -1795,6 +1824,10 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
+  /siema/1.5.1:
+    resolution: {integrity: sha512-BUNFdTSbC9/2gA6r6teBY9B8O/XZOUz8kVyttpsbq4gbHF9PidUDzs6aPtiObhV4KoEuPQdhRvK5hPPi9lgSTg==}
+    dev: false
+
   /sirv/2.0.2:
     resolution: {integrity: sha512-4Qog6aE29nIjAOKe/wowFTxOdmbEZKb+3tsLljaBRzJwtqto0BChD2zzH0LhgCSXiI+V7X+Y45v14wBZQ1TK3w==}
     engines: {node: '>= 10'}
@@ -1870,6 +1903,12 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
     dev: true
+
+  /svelte-carousel/1.0.25:
+    resolution: {integrity: sha512-vR/AbGYwlh3fgWaB5PJg+iqZFvoVCJq4JWdmlXvPtdG9TLlKJWBcoiKlMZt3MnFF7AqNW46tOH/O+uVMWQzyWQ==}
+    dependencies:
+      easy-reactive: 1.0.4
+    dev: false
 
   /svelte-check/3.1.4_sd5d5bwhwct4qrvp7ra4wv5wou:
     resolution: {integrity: sha512-25Lb46ZS4IK/XpBMe4IBMrtYf23V8alqBX+szXoccb7uM0D2Wqq5rMRzYBONZnFVuU1bQG3R50lyIT5eRewv2g==}
