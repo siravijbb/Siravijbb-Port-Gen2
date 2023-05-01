@@ -1,7 +1,7 @@
 <footer
 	class="mt-12 mb-8 max-w-7xl mx-auto px-4 md:px-6 flex items-center text-gray-600 text-sm sm:text-base"
 >
-	<div class="space-x-2 flex">
+	<div class="space-x-2 flex transition-transform duration-700 ease-in-out hover:rotate-[360deg]">
 		<a href="https://creatorsgarten.org/ring" title="Creatorsgarten">
 			<img src="/garten.svg" class="w-6 sm:w-8 aspect-square" alt="webring" />
 		</a>
