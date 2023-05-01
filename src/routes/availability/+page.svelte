@@ -13,6 +13,32 @@
 			<br />
 			<h2 class="text-center">Please check my availability before booking a meeting with me.</h2>
 		</div>
+		<div class="bg-gray-200">
+			<p class="text-center text-2xl rounded-xl">My availability</p>
+			<div class="grid md:grid-cols-3 sm:grid-cols-1 py-2 gap-1">
+				<p
+					class="text-left text-2xl bg-green-500 p-4 px-4 mx-4 rounded-xl hover:bg-gray-400 cursor-default"
+				>
+					Facebook
+				</p>
+				<p
+					class="text-left text-2xl bg-green-500 p-4 px-4 mx-4 rounded-xl hover:bg-gray-400 cursor-default"
+				>
+					Twitter
+				</p>
+				<p
+					class="text-left text-2xl bg-red-500 p-4 px-4 mx-4 rounded-xl hover:bg-gray-400 cursor-no-drop"
+				>
+					Instragram
+				</p>
+			</div>
+			<h4 class="px-4 flex justify-start">
+				<span class="text-gray-200 rounded-xl bg-red-500 p-2">Red:Not Available</span>
+				<span class="text-gray-200 rounded-xl bg-[#ECA869] p-2">Yellow:Patial Available</span>
+				<span class="text-gray-200 rounded-xl bg-green-500 p-2">Green:Available</span>
+			</h4>
+			<p class="px-6 py-1">Updated: 5/1/2023</p>
+		</div>
 		<div class="  items-center mx-auto">
 			<iframe
 				src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23E67C73&ctz=Asia%2FBangkok&showNav=1&showTitle=0&showDate=1&showTabs=0&showPrint=0&showTz=0&showCalendars=0&src=c2lyYXZpamJiQGdtYWlsLmNvbQ&color=%237986CB"
