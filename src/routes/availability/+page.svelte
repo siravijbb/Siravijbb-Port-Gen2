@@ -2,19 +2,20 @@
 	import Navbar from '../components/navbar.svelte';
 	import Footer from '../components/footer.svelte';
 </script>
-
+	<Navbar />
 <main class="  fontPage customFont z-30">
+
 	<title>Siravij - Availability</title>
-	<div class="  shadow-lg overflow-hidden">
-		<Navbar />
+	<div class="  shadow-lg overflow-hidden ">
+		
 
 		<div class="z-10 bg-siravijw p-4 rounded-xl hover:bg-gray-400 text-white">
-			<h1 class="text-center"><b>Siravij's availability</b></h1>
+			<h1 class="text-center "><b>Siravij's availability</b></h1>
 			<br />
 			<h2 class="text-center">Please check my availability before booking a meeting with me.</h2>
 		</div>
-		<div class="bg-gray-200">
-			<p class="text-center text-2xl rounded-xl">My availability</p>
+		<div class="darkmo">
+			<p class="text-center text-2xl rounded-xl darkmo">My availability</p>
 			<div class="grid md:grid-cols-3 sm:grid-cols-1 py-2 gap-1">
 				<p
 					class="text-left text-2xl bg-green-500 p-4 px-4 mx-4 rounded-xl hover:bg-gray-400 cursor-default"
@@ -32,7 +33,7 @@
 					Instragram
 				</p>
 			</div>
-			<h4 class="px-4 flex justify-start">
+			<h4 class="px-4 flex justify-start ">
 				<span class="text-gray-200 rounded-xl bg-red-500 p-2">Red:Not Available</span>
 				<span class="text-gray-200 rounded-xl bg-[#ECA869] p-2">Yellow:Patial Available</span>
 				<span class="text-gray-200 rounded-xl bg-green-500 p-2">Green:Available</span>
@@ -68,4 +69,14 @@
 	.customFont {
 		font-family: 'Helventica Nue', sans-serif;
 	}
+	.darkmo {
+			background-color: #ffffff;
+
+		}
+		@media (prefers-color-scheme: dark) {
+			.darkmo {
+			background-color: #1f2937;
+			color: #1f2937;
+		}
+		}
 </style>

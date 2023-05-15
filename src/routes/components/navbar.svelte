@@ -16,14 +16,14 @@
 	let group3 = 2;
 </script>
 
-<nav class="sticky top-0">
-	<Navbar class=" text-white navcolor px-4 py-4 z-40  w-screen" let:hidden let:toggle>
+<nav class="sm:sticky md:fixed left-0 z-50 flex  w-full  top-0">
+	<Navbar class=" text-white navcolor  px-4 py-4 z-40  w-screen" let:hidden let:toggle>
 		<NavBrand href="/"><h1 class="customFont max-w-7xl text-5xl mb-1">Siravij</h1></NavBrand>
 		<NavHamburger on:click={toggle} />
 		<NavUl {hidden} class="ml-3 navcolor">
 			<NavLi
 				href="/"
-				class="cursor-pointer text-white navcolor rounded-2xl  hover:text-siravijw md:hover:text-siravijw"
+				class="cursor-pointer text-white navcolor dark:bg-gray-800 rounded-2xl  hover:text-siravijw md:hover:text-siravijw"
 				>Home</NavLi
 			>
 			<NavLi
@@ -72,12 +72,23 @@
 		.navcolor {
 			background-color: #554994;
 		}
+		@media (prefers-color-scheme: dark) {
+			.navcolor {
+				color: #1f2937;
+			}
+		}
 	</style>
 {:else}
 	<style>
 		.navcolor {
 			background-color: #ffffff;
 			color: #554994;
+		}
+		@media (prefers-color-scheme: dark) {
+			.navcolor {
+			background-color: #1f2937;
+			color: #554994;
+		}
 		}
 	</style>
 {/if}
