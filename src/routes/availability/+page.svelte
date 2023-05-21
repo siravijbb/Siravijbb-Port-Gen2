@@ -28,17 +28,29 @@
 					Twitter
 				</p>
 				<p
-					class="text-left text-2xl bg-red-500 p-4 px-4 mx-4 rounded-xl hover:bg-gray-400 cursor-no-drop"
+					class="text-left text-2xl bg-[#ECA869] p-4 px-4 mx-4 rounded-xl hover:bg-gray-400 cursor-no-drop"
 				>
 					Instragram
 				</p>
+			
 			</div>
+
+			
 			<h4 class="px-4 flex justify-start ">
 				<span class="text-gray-200 rounded-xl bg-red-500 p-2">Red:Not Available</span>
 				<span class="text-gray-200 rounded-xl bg-[#ECA869] p-2">Yellow:Patial Available</span>
 				<span class="text-gray-200 rounded-xl bg-green-500 p-2">Green:Available</span>
 			</h4>
-			<p class="px-6 py-1">Updated: 5/1/2023</p>
+			<p class="px-6 py-1 darkmo">Updated: 5/1/2023</p>
+			<p class="px-6 py-1 darkmo">Updated: 5/21/2023</p>
+					<div class="grid md:grid-cols-1 sm:grid-cols-1 py-2 gap-1">
+				<p
+					class="text-center text-2xl bg-[#ECA869] p-4 px-4 mx-4 rounded-xl hover:bg-gray-400 cursor-default"
+				>
+					Incident Report
+				</p>
+
+			</div>
 		</div>
 		<div class="  items-center mx-auto">
 			<iframe
@@ -76,7 +88,7 @@
 		@media (prefers-color-scheme: dark) {
 			.darkmo {
 			background-color: #1f2937;
-			color: #1f2937;
+			color: #ffffff;
 		}
 		}
 </style>
