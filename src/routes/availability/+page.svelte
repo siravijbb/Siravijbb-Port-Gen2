@@ -2,15 +2,13 @@
 	import Navbar from '../components/navbar.svelte';
 	import Footer from '../components/footer.svelte';
 </script>
-	<Navbar />
+
+<Navbar />
 <main class="  fontPage customFont z-30">
-
 	<title>Siravij - Availability</title>
-	<div class="  shadow-lg overflow-hidden ">
-		
-
-		<div class="z-10 bg-siravijw p-4 rounded-xl hover:bg-gray-400 text-white">
-			<h1 class="text-center "><b>Siravij's availability</b></h1>
+	<div class="  shadow-lg overflow-hidden">
+		<div class="z-10 bg-siravijw mt-20 p-4 mdLmt-20 rounded-xl hover:bg-gray-400 text-white">
+			<h1 class="text-center"><b>Siravij's availability</b></h1>
 			<br />
 			<h2 class="text-center">Please check my availability before booking a meeting with me.</h2>
 		</div>
@@ -32,25 +30,21 @@
 				>
 					Instragram
 				</p>
-			
 			</div>
 
-			
-			<h4 class="px-4 flex justify-start ">
+			<h4 class="px-4 flex justify-start">
 				<span class="text-gray-200 rounded-xl bg-red-500 p-2">Red:Not Available</span>
 				<span class="text-gray-200 rounded-xl bg-[#ECA869] p-2">Yellow:Patial Available</span>
 				<span class="text-gray-200 rounded-xl bg-green-500 p-2">Green:Available</span>
 			</h4>
+			<a class="" href=""
+				><p class="text-center text-2xl bg-red-500 p-4 px-4 mx-4 my-2 rounded-xl hover:bg-gray-400">
+					Incident Report
+				</p></a
+			>
 			<p class="px-6 py-1 darkmo">Updated: 5/1/2023</p>
 			<p class="px-6 py-1 darkmo">Updated: 5/21/2023</p>
-					<div class="grid md:grid-cols-1 sm:grid-cols-1 py-2 gap-1">
-				<p
-					class="text-center text-2xl bg-[#ECA869] p-4 px-4 mx-4 rounded-xl hover:bg-gray-400 cursor-default"
-				>
-					Incident Report
-				</p>
-
-			</div>
+			<div class="grid md:grid-cols-1 sm:grid-cols-1 py-2 gap-1" />
 		</div>
 		<div class="  items-center mx-auto">
 			<iframe
@@ -82,13 +76,12 @@
 		font-family: 'Helventica Nue', sans-serif;
 	}
 	.darkmo {
-			background-color: #ffffff;
-
-		}
-		@media (prefers-color-scheme: dark) {
-			.darkmo {
-			background-color: #1f2937;
+		background-color: #ffffff;
+	}
+	@media (prefers-color-scheme: dark) {
+		.darkmo {
+			background-color: rgb(31, 41, 55);
 			color: #ffffff;
 		}
-		}
+	}
 </style>

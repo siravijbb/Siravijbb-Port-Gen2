@@ -16,7 +16,7 @@
 	let group3 = 2;
 </script>
 
-<nav class="sm:sticky md:fixed left-0 z-50 flex  w-full  top-0">
+<nav class="sm:sticky md:fixed left-0 z-50 flex w-full top-0">
 	<Navbar class=" text-white navcolor  px-4 py-4 z-40  w-screen" let:hidden let:toggle>
 		<NavBrand href="/"><h1 class="customFont max-w-7xl text-5xl mb-1">Siravij</h1></NavBrand>
 		<NavHamburger on:click={toggle} />
@@ -74,7 +74,7 @@
 		}
 		@media (prefers-color-scheme: dark) {
 			.navcolor {
-				color: #1f2937;
+				color: #03001c;
 			}
 		}
 	</style>
@@ -86,9 +86,9 @@
 		}
 		@media (prefers-color-scheme: dark) {
 			.navcolor {
-			background-color: #1f2937;
-			color: #554994;
-		}
+				background-color: #1f2937;
+				color: #554994;
+			}
 		}
 	</style>
 {/if}
