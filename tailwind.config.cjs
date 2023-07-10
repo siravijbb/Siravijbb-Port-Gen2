@@ -9,7 +9,7 @@ const config = {
 	},
 
 	plugins: [require('flowbite/plugin')],
-	darkMode: 'class',
+	darkMode: 'media',
 	theme: {
 		colors: {
 			transparent: 'transparent',
@@ -23,7 +23,9 @@ const config = {
 			'bubble-gum': '#ff77e9',
 			bermuda: '#78dcca',
 			siravijpp: '#554994',
-			siravijw: '#F29393'
+			siravijw: '#F29393',
+			siravijdw: '#C17575',
+			dwarn: '#332940',
 		}
 	}
 };
