@@ -25,7 +25,7 @@ const config = {
 			siravijpp: '#554994',
 			siravijw: '#F29393',
 			siravijdw: '#C17575',
-			dwarn: '#332940',
+			dwarn: '#332940'
 		}
 	}
 };

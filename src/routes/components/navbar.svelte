@@ -12,7 +12,6 @@
 		NavUl,
 		NavLi
 	} from 'flowbite-svelte';
-	import { text } from 'svelte/internal';
 	let group3 = 2;
 </script>
 
