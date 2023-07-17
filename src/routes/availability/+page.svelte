@@ -46,15 +46,17 @@
 				>
 			</h4>
 			<p class="px-6 py-1 darkmo dark:text-gray-200">Updated: 7/10/2023</p>
-			<a
-				target="_blank"
-				href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;add=invite.siravijbb@gmail.com&amp;text=Request+Meet/Talk+About+XXXX+At+DDMMYYYY"
-				><p
-					class="text-center text-2xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-4 px-4 mx-4 my-2 rounded-xl hover:bg-gray-400 shadow-xl"
+			<div class="hover:bg-gray-400">
+				<a
+					target="_blank"
+					href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;add=invite.siravijbb@gmail.com&amp;text=Request+Meet/Talk+About+XXXX+At+DDMMYYYY"
+					><p
+						class="text-center text-2xl shadow-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-4 px-4 mx-4 my-2 rounded-xl"
+					>
+						Request Booking
+					</p></a
 				>
-					Request Booking
-				</p></a
-			>
+			</div>
 			<div class="grid md:grid-cols-1 sm:grid-cols-1 py-2 gap-1" />
 		</div>
 
@@ -82,5 +84,8 @@
 	}
 	.customFont {
 		font-family: 'Helventica Nue', sans-serif;
+	}
+	iframe {
+		filter: invert(0.9) saturate(0.5) hue-rotate(145deg);
 	}
 </style>
