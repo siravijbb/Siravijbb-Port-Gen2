@@ -85,7 +85,9 @@
 	.customFont {
 		font-family: 'Helventica Nue', sans-serif;
 	}
-	iframe {
-		filter: invert(0.9) saturate(0.5) hue-rotate(145deg);
+	@media (prefers-color-scheme: dark) {
+		iframe {
+			filter: invert(0.9) saturate(0.5) hue-rotate(145deg);
+		}
 	}
 </style>
