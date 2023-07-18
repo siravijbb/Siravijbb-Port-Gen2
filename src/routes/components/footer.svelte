@@ -1,5 +1,5 @@
 <footer
-	class="mt-12 mb-8 max-w-7xl mx-auto px-4 md:px-6 flex items-center text-gray-600 text-sm sm:text-base"
+	class="pt-12 pb-8 max-w-7xl px-auto px-4 md:px-6 flex items-center text-gray-600 text-sm sm:text-base dark:bg-dwarn dark:text-white"
 >
 	<div class="space-x-2 flex transition-transform duration-700 ease-in-out hover:rotate-[360deg]">
 		<a href="https://creatorsgarten.org/ring" title="Creatorsgarten">
