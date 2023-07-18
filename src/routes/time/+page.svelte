@@ -3,9 +3,9 @@
 	import Footer from '../components/footer.svelte';
 </script>
 
-<Navbar />
-<main class="  fontPage customFont z-30">
+<main class="  fontPage customFont z-30 h-screen w-screen dark:bg-dwarn">
 	<title>Siravij - Availability</title>
+	<Navbar />
 	<div class="  shadow-lg overflow-hidden">
 		<div
 			class="z-10 bg-siravijw md:mt-20 p-4 hover:bg-gray-400 text-white shadow-xl dark:text-gray-200 dark:bg-dwarn"
@@ -72,8 +72,9 @@
 			/>
 		</div>
 	</div>
+
+	<Footer />
 </main>
-<Footer />
 
 <style>
 	.fontPage {

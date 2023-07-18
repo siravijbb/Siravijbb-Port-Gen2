@@ -31,7 +31,7 @@
 				>Article</NavLi
 			>
 			<NavLi
-				href="/availability"
+				href="/time"
 				class="cursor-pointer text-white navcolor rounded-2xl hover:text-siravijw md:hover:text-siravijw"
 				>Availability</NavLi
 			>
