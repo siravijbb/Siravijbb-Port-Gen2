@@ -3,7 +3,7 @@
 	import Footer from './components/footer.svelte';
 </script>
 
-<div class="  shadow-lg overflow-hidden h-screen">
+<div class="  shadow-lg overflow-hidden h-screen customFont">
 	<title>Siravij - Home</title>
 	<Navbar />
 	<main class="  fontPage">
@@ -19,10 +19,6 @@
 <style>
 	.fontPage {
 		font-family: 'Helventica Nue', sans-serif;
-	}
-	.limitPage {
-		font-size: 2rem auto;
-		max-width: 1280px;
 	}
 	* {
 		box-sizing: border-box;
