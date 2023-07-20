@@ -78,7 +78,7 @@
 			<div class="hover:bg-gray-400">
 				<a
 					target="_blank"
-					href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;add=invite.siravijbb@gmail.com&amp;text=Request+Meet/Talk+About+XXXX+At+DDMMYYYY"
+					href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;add=siravijbb@gmail.com&amp;text=Request+Meet/Talk+About+XXXX+At+DDMMYYYY"
 					><p
 						class="text-center text-2xl shadow-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-4 px-4 mx-4 my-2 rounded-xl"
 					>
