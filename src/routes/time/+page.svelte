@@ -3,12 +3,12 @@
 	import Footer from '../components/footer.svelte';
 </script>
 
-<main class="  fontPage customFont z-30 h-screen w-screen dark:bg-dwarn">
+<main class="  fontPage customFont z-30 w-screen h-full dark:bg-dwarn ">
 	<title>Siravij - Availability</title>
 	<Navbar />
-	<div class="  shadow-lg overflow-hidden">
+	<div class="  shadow-lg  max-w-7xl mx-auto">
 		<div
-			class="z-10 bg-siravijw md:mt-20 p-4 hover:bg-gray-400 text-white shadow-xl dark:text-gray-200 dark:bg-dwarn"
+			class="z-10 bg-siravijw md:mt-20 p-4 hover:bg-gray-400 text-white shadow-xl dark:text-gray-200 dark:bg-dwarn "
 		>
 			<h1 class="text-center"><b>Siravij's availability</b></h1>
 			<br />
@@ -34,7 +34,7 @@
 				</p>
 			</div>
 
-			<h4 class="px-4 flex justify-start">
+			<h4 class="px-4 flex justify-start  md:grid-cols-3 sm:grid-cols-1">
 				<span class="text-gray-200 rounded-xl bg-red-500 p-2 shadow-xl dark:text-[#03001c]"
 					>Red:Not Available</span
 				>
@@ -50,7 +50,7 @@
 			<div class="  items-center mx-auto">
 				<div>
 					<iframe
-						class="map"
+						class="map mx-auto"
 						src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23E67C73&ctz=Asia%2FBangkok&showNav=1&showTitle=0&showDate=1&showTabs=0&showPrint=0&showTz=0&showCalendars=0&src=c2lyYXZpamJiQGdtYWlsLmNvbQ&color=%237986CB"
 						title="availability Map"
 						width="100%"
@@ -63,11 +63,11 @@
 				<div>
 					<!-- Google Calendar Appointment Scheduling begin -->
 					<iframe
-						class="map"
+						class="map mx-auto shadow-xl"
 						src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3tryV4X0Y-fZDqoJNZO2JWH1gATAVoK3AY3wKaXkDNAc3XNH9iORsGQH61ulew0-Pt86MJy0_O?gv=true"
 						title="availability Map"
-						width="100%"
-						height="700"
+						width="80%"
+						height="450"
 						style=""
 						loading="lazy"
 						allowfullscreen
@@ -94,6 +94,7 @@
 </main>
 
 <style>
+	
 	.fontPage {
 		font-family: 'Helventica Nue', sans-serif;
 	}
@@ -106,6 +107,7 @@
 	@media (prefers-color-scheme: dark) {
 		.map {
 			filter: invert(0.9) saturate(0.5) hue-rotate(145deg);
+			
 		}
 	}
 </style>
