@@ -1,0 +1,112 @@
+---
+import Navbar from "../components/Navbar.astro";
+import Layout from "../layouts/Layout.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<head>
+  <Layout
+    title="Time Avaliable"
+    ,
+    description="My  Avaliable Time"
+    ,
+    image="/full-body.webp"
+    ,
+  />
+  <Navbar />
+  <main class="Maincon shadow-xl rounded-xl mx-auto bg-neutral-200">
+    <div class="-mt-10">
+      <div class="mx-auto sm:px-6 lg:px-8 rounded-xl py-4">
+        <div class="bg-white text-ellipsis rounded-lg shadow-xl pt-4">
+          <p class="text-center text-2xl dark:text-gray-300">My availability</p>
+          <div class="p-4 grid md:grid-cols-3 sm:grid-cols-1 py-2 gap-1">
+            <p
+              class="sm:text-left md:text-center text-base md:text-2xl bg-green-500 m-1 p-2 rounded-xl hover:bg-gray-400 cursor-default shadow-xl dark:text-[#03001c] dark:shadow-white-500/40"
+            >
+              Facebook
+            </p>
+            <p
+              class="sm:text-left md:text-center md:text-2xl text-base bg-green-500 m-1 p-2 rounded-xl hover:bg-gray-400 cursor-default shadow-xl dark:text-[#03001c]"
+            >
+              Twitter
+            </p>
+            <p
+              class="sm:text-left md:text-center text-base md:text-2xl bg-green-500 m-1 p-2 rounded-xl hover:bg-gray-400 cursor-no-drop shadow-xl dark:text-[#03001c]"
+            >
+              Instragram
+            </p>
+          </div>
+
+          <div class="px-4 text-left grid grid-cols-3 md:grid-cols-1">
+            <p
+              class="text-xs md:text-sm md:inline text-center rounded-lg mt-2 mx-2 bg-red-500"
+            >
+              Red:Not Available
+            </p>
+            <p
+              class="text-xs md:text-sm md:inline text-center rounded-lg mt-2 md:ml-1 mx-2 bg-[#ECA869]"
+            >
+              Yellow:Patial Available
+            </p>
+            <p
+              class="text-xs md:text-sm md:inline text-center rounded-lg mt-2 md:ml-1 mx-2 bg-green-500"
+            >
+              Green:Available
+            </p>
+          </div>
+          <p class="text-xs md:text-sm px-6 py-1 darkmo dark:text-gray-200">
+            Updated: 7/10/2023
+          </p>
+
+          <div class="items-center mx-auto">
+            <div>
+              <iframe
+                class="map mx-auto"
+                src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23E67C73&ctz=Asia%2FBangkok&showNav=1&showTitle=0&showDate=1&showTabs=0&showPrint=0&showTz=0&showCalendars=0&src=c2lyYXZpamJiQGdtYWlsLmNvbQ&color=%237986CB"
+                title="availability Map"
+                width="100%"
+                height="450"
+                style=""
+                loading="lazy"
+                allowfullscreen></iframe>
+            </div>
+            <div>
+              <!-- Google Calendar Appointment Scheduling begin -->
+              <iframe
+                class="map mx-auto shadow-xl"
+                src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3tryV4X0Y-fZDqoJNZO2JWH1gATAVoK3AY3wKaXkDNAc3XNH9iORsGQH61ulew0-Pt86MJy0_O?gv=true"
+                title="availability Map"
+                width="80%"
+                height="450"
+                style=""
+                loading="lazy"
+                allowfullscreen></iframe>
+              <!-- end Google Calendar Appointment Scheduling -->
+            </div>
+          </div>
+          <div class="hover:bg-gray-400">
+            <a
+              target="_blank"
+              href="https://calendar.google.com/calendar/render?action=TEMPLATE&add=siravijbb@gmail.com&text=Request+Meet/Talk+About+XXXX+At+DDMMYYYY"
+              ><p
+                class="text-center text-2xl shadow-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-4 px-4 mx-4 my-2 rounded-xl"
+              >
+                Request Advance Booking
+              </p></a
+            >
+          </div>
+          <div class="grid md:grid-cols-1 sm:grid-cols-1 py-2 gap-1"></div>
+        </div>
+        <style>
+          .Maincon {
+            font-size: 1.5rem;
+            max-width: 1280px;
+            margin: 40px auto;
+          }
+        </style>
+      </div>
+    </div>
+  </main>
+
+  <Footer />
+</head>
